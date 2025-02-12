@@ -11,6 +11,8 @@ cd robosats
 docker run -d --name pages --restart always -p 4000:4000 pages
 cd web
 docker composer up -d
+cd ../nodeapp
+docker composer up -d
 ````
 
 From this folder
