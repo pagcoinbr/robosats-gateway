@@ -15,6 +15,7 @@ services:
   tor:
     build: ./tor
     restart: always
+    network_mode: host
     volumes:
       - ./tor/data:/var/lib/tor
       - ./tor/torrc:/etc/tor/torrc
