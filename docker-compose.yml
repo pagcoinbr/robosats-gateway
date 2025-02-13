@@ -12,6 +12,12 @@ services:
       - /etc/letsencrypt/:/etc/nginx/ssl/:ro
     network_mode: host
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+  tor:
+    build: ./tor
+    restart: always
+    volumes:
+      - ./tor/data:/var/lib/tor
+      - ./tor/torrc:/etc/tor/torrc
   certbot:
     image: certbot/certbot:latest
     restart: always
