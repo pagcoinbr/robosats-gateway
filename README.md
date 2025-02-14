@@ -7,9 +7,9 @@ https://learn.robosats.org
 Clone https://github.com/RoboSats/robosats on a searate folder
 
 ````
-cd robosats
-docker run -d --name pages --restart always -p 4000:4000 pages  # Docs
-cd web
+cd docs
+docker composer up -d  # Docs
+cd ../web
 docker composer up -d # Tor Frontend
 cd ../nodeapp 
 docker composer up -d  # Clearnet Frontend
