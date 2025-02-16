@@ -21,7 +21,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - "8080:3000"
+      - "6177:3000"
       - "2233:22"
   tor:
     build: ./tor
