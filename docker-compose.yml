@@ -10,6 +10,7 @@ services:
       - ./nginx/conf/:/etc/nginx/conf.d/:ro
       - /var/www/certbot:/var/www/certbot/:ro
       - /etc/letsencrypt/:/etc/nginx/ssl/:ro
+      - ./nostr:/nostr:ro
     network_mode: host
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
   gitea:
