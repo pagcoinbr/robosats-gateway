@@ -17,7 +17,7 @@ services:
     container_name: gitea
     restart: always
     environment:
-      - DISABLE_REGISTRATION: true # change to true for first installation
+      DISABLE_REGISTRATION: true # change to true for first installation
     volumes:
       - ./gitea:/data
       - /etc/timezone:/etc/timezone:ro
