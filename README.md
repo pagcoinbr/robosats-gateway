@@ -4,7 +4,7 @@ https://learn.robosats.org
 
 ## Setup
 
-Clone https://github.com/RoboSats/robosats on a searate folder
+Clone https://github.com/RoboSats/robosats on a separate folder
 
 ````
 cd docs
@@ -18,6 +18,6 @@ docker composer up -d  # Clearnet Frontend
 From this folder
 
 ````
-# Make sure to manually setup certbot before
+# Make sure to manually setup certbot in advance
 docker composer up -d
 ````
