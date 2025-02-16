@@ -1,10 +1,15 @@
 {
     "names": {
-      "_": "npub1gdfr0r0an32jalqryqlvpn3gsef2hu832wv6kp5p2gt2aqa2n8yqd42ffw",
-      "koalasat": "645681b9d067b1a362c4bee8ddff987d2466d49905c26cb8fec5e6fb73af5c84"
+      "_": "4352378dfd9c552efc03203ec0ce288652abf0f15399ab06815216ae83aa99c8",
+      "koalasat": "645681b9d067b1a362c4bee8ddff987d2466d49905c26cb8fec5e6fb73af5c84",
+      "kote": "21b128e1ae46f1d873e70996fdb14592f73dffbf9f2c26f2332de709fe1a5ccf",
+      "temple": "74001620297035daa61475c069f90b6950087fea0d0134b795fac758c34e7191",
+      "lake": "f2d4855df39a7db6196666e8469a07a131cddc08dcaa744a344343ffcf54a10c",
+      "veneto": "794fd64603a78e7411b782f7830f18762e7d6ea70022991bc7ce146bfc3f3da4",
+      "moon": "7af6f7cfc3bfdf8aa65df2465aa7841096fa8ee6b2d4d14fc43d974e5db9ab96"
     },
     "relays": {
       "645681b9d067b1a362c4bee8ddff987d2466d49905c26cb8fec5e6fb73af5c84": [ "wss://nostr.satstralia.com", "wss://eden.nostr.land", "wss://relay.0xchat.com", "wss://wot.nostr.party" ],
-      "npub1gdfr0r0an32jalqryqlvpn3gsef2hu832wv6kp5p2gt2aqa2n8yqd42ffw": [ "wss://nostr.satstralia.com", "wss://relay.damus.io", "wss://relay.0xchat.com", "wss://wot.nostr.party" ]
+      "4352378dfd9c552efc03203ec0ce288652abf0f15399ab06815216ae83aa99c8": [ "wss://nostr.satstralia.com", "wss://relay.damus.io", "wss://relay.0xchat.com", "wss://wot.nostr.party" ]
     }
   }
