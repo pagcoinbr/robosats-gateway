@@ -1,0 +1,10 @@
+{
+    "names": {
+      "_": "npub1gdfr0r0an32jalqryqlvpn3gsef2hu832wv6kp5p2gt2aqa2n8yqd42ffw",
+      "koalasat": "645681b9d067b1a362c4bee8ddff987d2466d49905c26cb8fec5e6fb73af5c84"
+    },
+    "relays": {
+      "645681b9d067b1a362c4bee8ddff987d2466d49905c26cb8fec5e6fb73af5c84": [ "wss://nostr.satstralia.com", "wss://eden.nostr.land", "wss://relay.0xchat.com", "wss://wot.nostr.party" ],
+      "npub1gdfr0r0an32jalqryqlvpn3gsef2hu832wv6kp5p2gt2aqa2n8yqd42ffw": [ "wss://nostr.satstralia.com", "wss://relay.damus.io", "wss://relay.0xchat.com", "wss://wot.nostr.party" ]
+    }
+  }
