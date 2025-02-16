@@ -12,6 +12,15 @@ services:
       - /etc/letsencrypt/:/etc/nginx/ssl/:ro
     network_mode: host
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+  gitea:
+    image: docker.io/gitea/gitea:nightly
+    container_name: gitea
+    restart: always
+    network_mode: host
+    volumes:
+      - ./gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
   tor:
     build: ./tor
     restart: always
