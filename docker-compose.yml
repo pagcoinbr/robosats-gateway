@@ -16,6 +16,8 @@ services:
     image: docker.io/gitea/gitea:nightly
     container_name: gitea
     restart: always
+    environment:
+      - DISABLE_REGISTRATION: true # change to true for first installation
     volumes:
       - ./gitea:/data
       - /etc/timezone:/etc/timezone:ro
