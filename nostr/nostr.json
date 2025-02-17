@@ -12,6 +12,6 @@
     "relays": {
       "645681b9d067b1a362c4bee8ddff987d2466d49905c26cb8fec5e6fb73af5c84": [ "wss://nostr.satstralia.com", "wss://eden.nostr.land", "wss://relay.0xchat.com", "wss://wot.nostr.party" ],
       "4352378dfd9c552efc03203ec0ce288652abf0f15399ab06815216ae83aa99c8": [ "wss://nostr.satstralia.com", "wss://relay.damus.io", "wss://relay.0xchat.com", "wss://wot.nostr.party" ],
-      "794fd64603a78e7411b782f7830f18762e7d6ea70022991bc7ce146bfc3f3da4": [ "wss://relay.primal.net","wss://relay.primal.net","wss://relay.bitcoinveneto.org","wss://nos.lol"]
+      "794fd64603a78e7411b782f7830f18762e7d6ea70022991bc7ce146bfc3f3da4": [ "wss://relay.primal.net","wss://relay.damus.io","wss://relay.bitcoinveneto.org","wss://nos.lol"]
     }
   }
