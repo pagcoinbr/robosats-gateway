@@ -22,8 +22,8 @@ This repository contains scripts to automatically install and configure a RoboSa
 ### Option 2: Manual Clone and Install
 
 ```bash
-git clone <this-repository>
-cd robosats-web-host
+git clone https://github.com/pagcoinbr/robosats-gateway.git
+cd robosats-gateway
 ./install-robosats-gateway.sh
 ```
 
@@ -36,8 +36,8 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 # Clone and install
-git clone <this-repository>
-cd robosats-web-host
+git clone https://github.com/pagcoinbr/robosats-gateway.git
+cd robosats-gateway
 ./install-robosats-gateway.sh
 ```
 

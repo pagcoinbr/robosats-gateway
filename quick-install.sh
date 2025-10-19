@@ -30,10 +30,10 @@ else
     # Check if curl is available
     if command -v curl &> /dev/null; then
         # If this script exists online, we could download it
-        echo "For now, please clone the repository and run the installer:"
+        echo "Please clone the repository and run the installer:"
         echo ""
-        echo "git clone https://github.com/YourRepo/robosats-web-host.git"
-        echo "cd robosats-web-host"
+        echo "git clone https://github.com/pagcoinbr/robosats-gateway.git"
+        echo "cd robosats-gateway"
         echo "./install-robosats-gateway.sh"
     else
         echo "Error: curl not found. Please install curl or clone the repository manually."
