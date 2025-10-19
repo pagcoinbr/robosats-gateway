@@ -8,7 +8,7 @@ A complete automated installation system for setting up your own RoboSats federa
 
 ```bash
 # Clone and install
-git clone https://github.com/pagcoin/robosats-gateway.git
+git clone https://github.com/pagcoinbr/robosats-gateway.git
 cd robosats-gateway
 ./install-robosats-gateway.sh
 ```
@@ -215,7 +215,7 @@ This project is licensed under the same terms as RoboSats - check the [LICENSE](
 
 ```bash
 # Installation
-git clone https://github.com/pagcoin/robosats-gateway.git
+git clone https://github.com/pagcoinbr/robosats-gateway.git
 cd robosats-gateway
 ./install-robosats-gateway.sh
 
