@@ -18,7 +18,7 @@ services:
     container_name: gitea
     restart: always
     environment:
-      DISABLE_REGISTRATION: true # change to true for first installation
+      DISABLE_REGISTRATION: "true" # change to true for first installation
     volumes:
       - ./gitea:/data
       - /etc/timezone:/etc/timezone:ro
@@ -26,13 +26,13 @@ services:
     ports:
       - "6177:3000"
       - "2233:22"
-  tor:
-    build: ./tor
-    restart: always
-    network_mode: host
-    volumes:
-      - ./tor/data:/var/lib/tor
-      - ./tor/torrc:/etc/tor/torrc
+  # tor:
+  #   build: ./tor
+  #   restart: always
+  #   network_mode: host
+  #   volumes:
+  #     - ./tor/data:/var/lib/tor
+  #     - ./tor/torrc:/etc/tor/torrc
   certbot:
     image: certbot/certbot:latest
     restart: always
@@ -40,4 +40,20 @@ services:
       - /var/www/certbot/:/var/www/certbot/:rw
       - /etc/letsencrypt/:/etc/letsencrypt/:rw
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+  # RoboSats Client App (connects to federation coordinators)
+  robosats-client:
+    image: recksato/robosats-client:v0.8.2-alpha
+    container_name: robosats-client
+    restart: always
+    environment:
+      - TOR_PROXY_IP=127.0.0.1
+      - TOR_PROXY_PORT=9050
+    volumes:
+      - ./robosats-client-data:/usr/src/robosats/data
+    network_mode: host
+
+volumes:
+  robosats_postgres_data:
+  robosats_redis_data:
 

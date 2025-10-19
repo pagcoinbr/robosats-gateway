@@ -1,0 +1,61 @@
+# Generated installation directories
+robosats-gateway/
+robosats-gateway.backup.*/
+
+# Docker volumes and data
+robosats-client-data/
+nginx-data/
+certbot-data/
+
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+ssl/
+letsencrypt/
+
+# Environment files with secrets
+.env
+*.env
+secrets/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Docker override files
+docker-compose.override.yml
+
+# Node modules (if any)
+node_modules/
+
+# Python cache (if any)
+__pycache__/
+*.pyc
+*.pyo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
