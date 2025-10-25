@@ -84,12 +84,12 @@ print_error() {
 }
 
 # Check if running as root
-check_root() {
-    if [[ $EUID -eq 0 ]]; then
-        print_error "This script should not be run as root for security reasons."
-        exit 1
-    fi
-}
+# check_root() {
+#     if [[ $EUID -eq 0 ]]; then
+#         print_error "This script should not be run as root for security reasons."
+#         exit 1
+#     fi
+# }
 
 # Check system requirements
 check_requirements() {
@@ -493,7 +493,6 @@ main() {
     echo "================================================"
     echo ""
     
-    check_root
     check_requirements
     create_directory
     create_docker_compose
