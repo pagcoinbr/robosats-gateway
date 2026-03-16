@@ -43,7 +43,7 @@ services:
 
   # RoboSats Client App (connects to federation coordinators)
   robosats-client:
-    image: recksato/robosats-client:v0.8.2-alpha
+    image: recksato/robosats-client:latest
     container_name: robosats-client
     restart: always
     environment:
